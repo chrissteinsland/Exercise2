@@ -18,7 +18,7 @@ def incrementingFunction():
 
 def decrementingFunction():
     global i
-    for j in range(0,999000):
+    for j in range(0,1000000):
         mutex.acquire()
         i-=1
         mutex.release()
