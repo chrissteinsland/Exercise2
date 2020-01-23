@@ -1,7 +1,7 @@
 # Mutex and Channel basics
 
 ### What is an atomic operation?
-> *Your answer here*
+> *A concurrent operation that runs completely independent of other processes*
 
 ### What is a semaphore?
 > *Your answer here*
@@ -10,16 +10,16 @@
 > *Your answer here*
 
 ### What is the difference between a mutex and a binary semaphore?
-> *Your answer here*
+> *A binary semaphore is a signalling mechanism, signalling when process is finished to the next process. Mutex is a locking mechanism, keeping the resources locked while in use*
 
 ### What is a critical section?
-> *Your answer here*
+> *It is a section with shared variables, which requires a semaphore or mutex to avoid synchronization issues*
 
 ### What is the difference between race conditions and data races?
  > *Your answer here*
 
 ### List some advantages of using message passing over lock-based synchronization primitives.
-> *Your answer here*
+> *With message passing, it is easier to synchronize*
 
 ### List some advantages of using lock-based synchronization primitives over message passing.
-> *Your answer here*
+> *Lock-based synchronization is faster*

@@ -1,5 +1,6 @@
 #include <pthread.h>
 #include <stdio.h>
+#include <semaphore.h>
 
 int i = 0;
 
@@ -7,7 +8,7 @@ int i = 0;
 void* incrementingThreadFunction(){
     for (int j = 0; j < 1000000; j++) {
 	// TODO: sync access to i
-	i++;
+	    i++;
     }
     return NULL;
 }
@@ -15,11 +16,10 @@ void* incrementingThreadFunction(){
 void* decrementingThreadFunction(){
     for (int j = 0; j < 1000000; j++) {
 	// TODO: sync access to i
-	i--;
+	    i--;
     }
     return NULL;
 }
-
 
 int main(){
     pthread_t incrementingThread, decrementingThread;
