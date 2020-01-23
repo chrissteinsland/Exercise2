@@ -24,8 +24,16 @@ func number_server(add_number <-chan int, control <-chan int, number chan<- int)
 		case j := <- add_number:
 			i += j
 
-		//case status := <- control:
-		//	if (status == GetNumber):
+		case status := <- control:
+			if status == GetNumber {
+				Println("Calculations finished", <-number)
+
+			} else if status == Exit {
+				Println("Time to exit, goodbye cruel world!")
+
+			} else {
+				Println("Should not come here!")
+			}
 }
 
 func incrementing(add_number chan<- int, finished chan<- bool) {
