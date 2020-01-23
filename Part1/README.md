@@ -4,7 +4,7 @@
 > *A concurrent operation that runs completely independent of other processes*
 
 ### What is a semaphore?
-> *Your answer here*
+> *A variable that manages resource access for multiple threads. Can be a range of value but non-negative. Used for synchronization of processes. Uses a signaling mechanism.*
 
 ### What is a mutex?
 > *Your answer here*
